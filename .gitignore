@@ -1,0 +1,15 @@
+# Jekyll 빌드 파일
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+# Windows 시스템 파일
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+# Mac 시스템 파일
+.DS_Store
+# 기타
+*.log
+.bundle/
+vendor/ 

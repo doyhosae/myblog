@@ -1,26 +1,3 @@
-theme: minima
-title: 내 첫 블로그
-author: GitHubID
-description: >-
-  Jekyll과 GitHub Pages로 만든 첫 블로그입니다.
-
-# SNS 설정 (선택 사항)
-# twitter_username: your_twitter_username
-# github_username:  your_github_username
-
-# 빌드 설정
-markdown: kramdown
-
-# 플러그인
-plugins:
-  - jekyll-feed
-
-# 제외할 파일
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+title: 내 첫 Jekyll 블로그
+description: GitHub Pages와 Jekyll로 3분 만에 만든 사이트
+theme: jekyll-theme-minimal

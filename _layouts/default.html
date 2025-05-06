@@ -2,25 +2,28 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} - {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
 </head>
 <body>
-  <header>
-    <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
-    <nav>
-      <a href="{{ "/" | relative_url }}">홈</a>
-      <!-- <a href="{{ "/about.html" | relative_url }}">소개</a> -->
-    </nav>
-  </header>
-
-  <main>
-    {{ content }}
-  </main>
-
-  <footer>
-    <p>&copy; {{ "now" | date: "%Y" }} {{ site.author }}.</p>
-  </footer>
+  <div class="wrapper">
+    <header>
+      <h1><a href="{{ "/" | relative_url }}">{{ site.title }}</a></h1>
+      <p>{{ site.description }}</p>
+      <p class="view"><a href="{{ "/about/" | relative_url }}">소개</a></p>
+      {% if site.github.is_user_page %}
+      <p class="view"><a href="{{ site.github.owner_url }}">GitHub 프로필</a></p>
+      {% endif %}
+    </header>
+    <section>
+      {{ content }}
+    </section>
+    <footer>
+      <p><small>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</small></p>
+    </footer>
+  </div>
+  <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
 </body>
 </html> 
