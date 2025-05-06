@@ -1,3 +1,40 @@
 title: 내 첫 Jekyll 블로그
 description: GitHub Pages와 Jekyll로 3분 만에 만든 사이트
+author:
+  name: 블로그 운영자
+  email: example@example.com
+  
+# 소셜 미디어 설정
+social:
+  github: username
+  twitter: username
+  instagram: username
+
+# URL 설정
+url: "" # 실제 배포 시 사이트 URL
+baseurl: ""
+
+# 블로그 설정
+permalink: /:year/:month/:day/:title/
+paginate: 5
+future: true
+
+# 테마 설정
 theme: jekyll-theme-minimal     # GitHub 기본 테마 중 하나
+
+# 블로그 기능 활성화
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# 기본 언어 설정
+lang: ko-KR
+
+# 제외할 파일/폴더
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - README.md
