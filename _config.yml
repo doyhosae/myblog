@@ -1,3 +1,25 @@
 title: 내 첫 Jekyll 블로그
-description: GitHub Pages와 Jekyll로 3분 만에 만든 사이트
-theme: jekyll-theme-minimal     # GitHub 기본 테마 중 하나
+description: GitHub Pages와 Jekyll로 만든 개인 블로그
+theme: jekyll-theme-minimal
+show_excerpts: true
+author:
+  name: 블로그 작성자
+  email: your-email@example.com
+  github: your-github-username
+  twitter: your-twitter-username
+
+# 블로그 설정
+permalink: /:year/:month/:day/:title/
+paginate: 5
+paginate_path: "/page:num/"
+
+# 빌드 설정
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# SEO 설정
+google_analytics: UA-XXXXXXXXX-X
